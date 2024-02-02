@@ -14,13 +14,13 @@ function App() {
   const [navDatas] = useState(data);
   const [iconDatas] = useState(iconData);
   const [servicesDatas]=useState(servicesData);
-  const[check,setCheck]=useState([{id:1,entry:false},{id:2,entry:false},{id:3,entry:false},{id:4,entry:false}]);
-  let num=0;
+  // const[check,setCheck]=useState([{id:1,entry:false},{id:2,entry:false},{id:3,entry:false},{id:4,entry:false}]);
+  // let num=0;
   function getId(id_no){
     console.log("Hello I am Working",id_no);
-    if(id_no==2){
+    if(id_no===2){
     }
-    num=id_no;
+    // num=id_no;
     return id_no;
     // setCheck(check.filter((e)={
     //    return e!==id_no
