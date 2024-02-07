@@ -1,5 +1,5 @@
 { 
-  "homepage": "https://amanroy7632.github.io/Portfolio",
+ 
   "name": "port",
   "version": "0.1.0",
   "private": true,
@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+  }, 
   "eslintConfig": {
     "extends": [
       "react-app",
