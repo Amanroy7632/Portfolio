@@ -5,9 +5,13 @@
 .services-container{
     display: flex;
     justify-content: center;
+   
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+}
+.services-box.add-border{
+    border: 0.2rem solid #000; 
 }
 .services-container .services-box{
     flex: 1 1 30rem;
@@ -16,8 +20,8 @@
     /* border-radius: 2rem; */
     border-radius: 10rem 0rem;
     text-align: center;
-    border: .2rem solid var(--bg-color);
-    border: .2rem solid #fff;
+    /* border: .2rem solid var(--bg-color); */
+    border: 0.2rem solid #fff;
     transition: 0.5s ease;
 }
 .services-container .services-box:nth-child(2){

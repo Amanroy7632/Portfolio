@@ -4,7 +4,8 @@
     /* margin-top: 6rem; */
     padding-top: 10vh;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
     /* flex-direction: row; */
     width: 100vw;
     height: 100vh;
@@ -22,10 +23,6 @@
     aspect-ratio: 3/4;
     width: 25vw;
     object-fit:cover;
-    /* border-radius: 5rem; */
-    /* mix-blend-mode:color-dodge; */
-    /* opacity: 0; */
-    /* background-blend-mode: color-burn; */
     background: transparent;
     transition: .5s ease;
 
@@ -38,7 +35,6 @@
 
 }
 .home-content{
-    /* align-items: center; */
     align-content: center;
 }
 
@@ -104,7 +100,7 @@
 
 .btn:hover {
     box-shadow: none;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,#000);
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,#000); */
 }
 
 @media (max-width:768px) {

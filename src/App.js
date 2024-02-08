@@ -17,7 +17,7 @@ function App() {
   // const[check,setCheck]=useState([{id:1,entry:false},{id:2,entry:false},{id:3,entry:false},{id:4,entry:false}]);
   // let num=0;
   function getId(id_no){
-    console.log("Hello I am Working",id_no);
+    // console.log("Hello I am Working",id_no);
     if(id_no===2){
     }
     // num=id_no;
@@ -25,6 +25,7 @@ function App() {
     // setCheck(check.filter((e)={
     //    return e!==id_no
     // }));
+    
   }
   return (
     // <div>
