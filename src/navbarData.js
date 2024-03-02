@@ -19,11 +19,11 @@ const data=[{
     name:"Services",
     href:"/services"
 },
-// {
-//     id:5,
-//     name:"Portfolio",
-//     href:"/"
-// },
+{
+    id:5,
+    name:"Projects",
+    href:"/project"
+},
 // {
 //     id:6,
 //     name:"Contact",

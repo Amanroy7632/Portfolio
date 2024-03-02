@@ -9,6 +9,7 @@ import servicesData from './servicesData';
 import Home from './Components/Home';
 import About from './Components/About';
 import Services from './Components/Services';
+import Project from './Components/project/Project';
 
 function App() {
   const [navDatas] = useState(data);
@@ -37,6 +38,7 @@ function App() {
 
     <Route exact path='/about'  element={<About/>}/>
     <Route exact path='/services' element={<Services servicesDatas={servicesDatas}/>}/>
+    <Route exact path='/project' element={<Project/>}/>
     <Route></Route>
     </Routes>
     
