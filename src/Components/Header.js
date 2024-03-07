@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {useState} from 'react';
 import "./CssFile/header.css";
 import {DarkModeSwitch} from 'react-toggle-dark-mode';
@@ -8,11 +8,13 @@ function Header({ navDatas,getId }) {
   const [isDarkMode,setDarkMode]=useState(false);
   const toggleDarkMode =(checked)=>{
     setDarkMode(checked);
+    document.querySelector('html').classList.toggle("dark");
     document.body.classList.toggle("dark");
+    
     // document.querySelector('.services-box').classList.toggle("add-border");
   }
   return (
-    <div className="header">
+    <div className="header dark:bg-gray-950">
       <div className="logo">
         
         <DarkModeSwitch className="darkmode-switch"
@@ -41,9 +43,9 @@ function Header({ navDatas,getId }) {
             
           }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className=" bg-black dark:bg-white rounded-md"></span>
+          <span className=" bg-black dark:bg-white rounded-md"></span>
+          <span className=" bg-black dark:bg-white rounded-md"></span>
         </div>
         {/* <DarkModeSwitch className="darkmode-switch"
       style={{ marginLeft: '2rem' }}
@@ -54,9 +56,15 @@ function Header({ navDatas,getId }) {
     /> */}
       </div>
       {/* <Link></Link> */}
-      <nav className="navbar">
+      <nav className="navbar flex justify-between w-2/5 items-center dark:text-white">
         {navDatas.map((navData) => {
-          return <Link to={navData.href} key={navData.id} hrefLang="#services" onClick={() => {
+          return <NavLink  className={({ isActive }) =>
+          `block py-2 pr-4 pl-3 duration-200 ${
+            isActive
+              ? " text-cyan-400"
+              : "text-gray-700 dark:text-white "
+          } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 `
+        }  to={navData.href} key={navData.id} hrefLang="#services" onClick={() => {
             // document.querySelector()
             const hamburgIcon = document.querySelector(".hamburg-icon");
             const navBarIcon = document.querySelector(".navbar");
@@ -64,7 +72,7 @@ function Header({ navDatas,getId }) {
             navBarIcon.classList.toggle("show-menu");
             // document.querySelector(".about-selected").classList.toggle("hide");
             getId(navData.id);
-          }} >{navData.name}</Link>;
+          }} >{navData.name}</NavLink>;
         })}
       </nav>
     </div>

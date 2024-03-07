@@ -3,7 +3,7 @@ import Scard from './Scard';
 function Services({servicesDatas}){
     return (
         <section className="services" id="services">
-        <h2 className="heading">Our <span>Services</span></h2>
+        <h2 className="heading">Our <span className='span-color'>Services</span></h2>
         <div className="services-container">
             {
                 servicesDatas.map((servicesData)=>{

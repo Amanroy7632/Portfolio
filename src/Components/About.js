@@ -15,7 +15,7 @@ function About() {
             <img src={profilePic} alt="profile pic" />
         </div>
         <div className="about-content">
-            <h2 className="heading">About <span>Me</span></h2>
+            <h2 className="heading">About <span className='span-color'>Me</span></h2>
             <h3>Hello! Welcome to my <span>Portfolio</span>! Really happy to see you here.</h3>
             <p> {description}<span className='readMore' onClick={readMoreHandler}>{readMore?`show less`:`read more`}</span></p>
 

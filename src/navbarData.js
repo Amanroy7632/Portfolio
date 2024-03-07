@@ -8,11 +8,11 @@ const data=[{
     name:"About",
     href:"/about"
 }
-// ,{
-//     id:3,
-//     name:"Skills",
-//     href:"/skill"
-// }
+,{
+    id:3,
+    name:"Skills",
+    href:"/skill"
+}
 ,
 {
     id:4,
@@ -24,11 +24,11 @@ const data=[{
     name:"Projects",
     href:"/project"
 },
-// {
-//     id:6,
-//     name:"Contact",
-//     href:"/contact"
-// }
+{
+    id:6,
+    name:"Github",
+    href:"/github"
+}
 ];
 
 export default data;

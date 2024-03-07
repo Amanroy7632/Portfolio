@@ -10,6 +10,8 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Services from './Components/Services';
 import Project from './Components/project/Project';
+import Github from './Components/github/Github';
+// import { fetchGithubData } from './Components/github/Github';
 
 function App() {
   const [navDatas] = useState(data);
@@ -39,6 +41,7 @@ function App() {
     <Route exact path='/about'  element={<About/>}/>
     <Route exact path='/services' element={<Services servicesDatas={servicesDatas}/>}/>
     <Route exact path='/project' element={<Project/>}/>
+    <Route exact path='/github' element={<Github/>} />
     <Route></Route>
     </Routes>
     

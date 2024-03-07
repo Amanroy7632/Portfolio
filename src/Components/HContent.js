@@ -5,7 +5,7 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 // import { useState } from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Icon from "./Icon";
 import Typewriter from "typewriter-effect";
 import "./CssFile/home.css";
@@ -47,9 +47,19 @@ function HContent({ iconDatas }) {
           return <Icon {...iconData} key={iconData.id}></Icon>;
         })}
       </div>
-      <Link to="/" className="btn">
-        Download CV <FontAwesomeIcon icon={faDownload} />
-      </Link>
+      {/* <Link to="/" className=" glowing-btn">
+        Download <span className="glowing-txt">Cv</span> <FontAwesomeIcon icon={faDownload} />
+      </Link> */}
+      {/* <a className="glowing-btn">
+        <span className="glowing-txt">Get</span>{" "}
+      </a> */}
+      
+      <a href="https://raw.githubusercontent.com/Amanroy7632/Amanroy7632/ed39d2f483997c69f6b657285793118bdffc1043/Aman_cse-1.pdf" className="glowing-btn btn">
+        <span className="glowing-txt">
+          G<span className="faulty-letter">e</span>t CV<FontAwesomeIcon icon={faDownload} />&nbsp;
+        </span>
+      </a>
+      {/* <FontAwesomeIcon icon={faDownload} /> */}
     </div>
   );
 }

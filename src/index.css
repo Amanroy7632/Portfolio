@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 *{
     margin:0 ;
@@ -22,12 +26,14 @@ html{
     overflow-x: hidden;
 }
 body{
-    background: var(--bg-color);
-    color: var(--text-color);
+    color: #000;
+    /* color: var(--text-color); */
 }
 body.dark{
-    background-color: #fff;
-    color: #000;
+    /* background-color: #fff; */
+    background: var(--bg-color);
+    /* color: #000; */
+    color: #fff;
 }
 
 section{
@@ -42,7 +48,7 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -57,12 +63,12 @@ section{
 }
 .logo{
   font-size: 2.5rem;
-  color: var(--text-color);
+  /* color: var(--text-color); */
   font-weight: 600;
   cursor: default;
 
 }
-span{
+.span-color{
     color: var(--main-color);
 }
 
@@ -90,8 +96,8 @@ span{
     .hamburg-icon span{
         width: 100%;
         height: 3px;
-        background-color: var(--text-color);;
-        transition: all 0.3s ease-in-out;
+        /* background-color: var(--text-color);; */
+        transition: all 0.5ms ease-in-out;
     }
     .hamburg-icon span:nth-child(2){
         margin-left: 20%;
@@ -127,13 +133,16 @@ span{
     .navbar.show-menu {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 50vw;
+        /* border: 1px solid red; */
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
         height: 45%;
         /* border: 2px solid #0ef; */
         position: fixed;
-        top: 7vh;
-        left: 0;
-        transition: all 0.3s ease-in;
+        top: 9vh;
+        left: 20vh;
+        transition: all 0.4s ease-in;
         justify-content: center;
         align-items:center;
         /* right: 10rem; */

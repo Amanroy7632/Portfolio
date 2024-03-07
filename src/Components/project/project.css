@@ -1,18 +1,20 @@
 .projects-container {
     margin-top: 8rem;
     padding: 20px;
+   
   }
   
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    
   }
-  .title{
+  /* .title{
     color: black;
-  }
+  } */
   .project {
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -37,7 +39,7 @@
   }
   
   .project-info p {
-    color: #666;
+    color: #b3b0b0;
   }
   
   /* Media Query for Mobile Devices */
