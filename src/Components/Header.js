@@ -14,7 +14,7 @@ function Header({ navDatas,getId }) {
     // document.querySelector('.services-box').classList.toggle("add-border");
   }
   return (
-    <div className="header dark:bg-gray-950">
+    <div className="header dark:bg-gray-950 backdrop-blur-xl">
       <div className="logo">
         
         <DarkModeSwitch className="darkmode-switch"
