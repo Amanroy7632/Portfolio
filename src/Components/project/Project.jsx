@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import ecom from './../images/ecom.png'
 import weatherImg from './../images/weather.png'
+import journalistImg from './../images/journalist.png'
+import expenseimg from './../images/journalist.png'
 import './project.css'
 function Project() {
     const projects = [
@@ -21,17 +23,17 @@ function Project() {
         },
         {
           id: 3,
-          title: "Currency Convertor",
-          description: "Description of Project 3",
-          image: ""
-          ,link:""
+          title: "Journalist Website",
+          description: "A full flesh frontend website for a ex-journalist which started teaching using this website.",
+          image: journalistImg
+          ,link:"https://journalist-react-app.vercel.app/"
         },
         {
             id: 4,
-            title: "Blog App",
-            description: "Description of Project 3",
-            image: ""
-            ,link:""
+            title: "Expense Tracker",
+            description: "A user friendly web based expense tracker application which provides the ability to manage expense tracking for customers.",
+            image: expenseimg
+            ,link:"https://amanroy7632.github.io/CodeAlpha-Intern-project/ExpenseTrackerApp/"
           }
       ];
   return (
