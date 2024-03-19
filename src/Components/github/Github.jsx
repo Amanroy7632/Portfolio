@@ -6,8 +6,8 @@ function Github() {
   const [data,setData]=useState({});
   // console.log(data);
     // const data=useLoaderData()
-    const objlength=Object.keys(data)
-    console.log(objlength);
+    // const objlength=Object.keys(data)
+    // console.log(objlength);
     
     useEffect(()=>{
       fetch("https://api.github.com/users/Amanroy7632").then((res)=>{
@@ -18,7 +18,7 @@ function Github() {
         alert("Error fetching data");
       })
     },[])
-    console.log(data);
+    // console.log(data);
 
    
     // const openDownlaodLink=()=>{

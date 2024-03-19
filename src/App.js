@@ -11,6 +11,8 @@ import About from './Components/About';
 import Services from './Components/Services';
 import Project from './Components/project/Project';
 import Github from './Components/github/Github';
+import Contact from './Components/contact/Contact';
+import Skills from './Components/skills/Skills';
 // import { fetchGithubData } from './Components/github/Github';
 
 function App() {
@@ -42,6 +44,9 @@ function App() {
     <Route exact path='/services' element={<Services servicesDatas={servicesDatas}/>}/>
     <Route exact path='/project' element={<Project/>}/>
     <Route exact path='/github' element={<Github/>} />
+    <Route exact path='/contact' element={<Contact/>} />
+    <Route exact path='/skill' element={<Skills/>} />
+    <Route  path='*' element={<div>Page Not Found ...</div>} />
     <Route></Route>
     </Routes>
     

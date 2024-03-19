@@ -66,8 +66,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
