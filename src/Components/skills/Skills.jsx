@@ -1,83 +1,55 @@
 import React from 'react'
 import './../skills/skills.css'
 function Skills() {
+    const skillData=[
+        {id:1,
+        skillName:"C",
+        amount:20},
+        {id:2,
+        skillName:"C++",
+        amount:70},
+        {id:3,
+        skillName:"Python",
+        amount:40},
+        {id:4,
+        skillName:"Java",
+        amount:50},
+        {id:5,
+        skillName:"HTML",
+        amount:80},
+        {id:6,
+        skillName:"CSS",
+        amount:45},
+        {id:7,
+        skillName:"Tailwind",
+        amount:60},
+        {id:8,
+        skillName:"JavaScript",
+        amount:60},
+        {id:9,
+            skillName:"React js",
+            amount:50}
+    ]
   return (
     <section class="skill" id="skill">
         <h1 class="heading">
             <span>SKILLS</span>
         </h1>
-        <div class="skill-container">
-            <div class="skill-box">
-                <div class="skill-progress">
-                    <div class="eighty-five-percent mb-blue">
-                        <div class="skill-name">
-                            <span>C++</span>
+        <div class="skill-container flex justify-center items-center flex-wrap gap-[2rem] m-[5rem]">
+            {
+                skillData.map((data)=>{
+                    return (<div key={data.id} class="skill-box bg-[#323946]">
+                    <div className= {`skill-progress w-[20rem] h-[6.4rem] bg-gray-400 border border-[rgb(39, 38, 38)] rounded-[20px] `}>
+                        <div className={`flex justify-center h-full ${data.amount>=50?"bg-blue-500":data.amount>=40?"bg-red-400":"bg-indigo-500"}`} style={{width:`${data.amount}%`}}>
+                            <div class="skill-name flex items-center justify-center">
+                                <span className=' text-white text-4xl items-center' >{data.skillName}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-progress">
-                    <div class="seventy-five-percent mb-orange">
-                        <div class="skill-name">
-                            <span>C</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="skill-box">
-                <div class="skill-progress">
-                    <div class="seventy-percent mb-lorange">
-                        <div class="skill-name">
-                            <span>Python</span>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="skill-box">
-                <div class="skill-progress">
-                    <div class="ninty-percent mb-dark">
-                        <div class="skill-name">
-                            <span>HTML</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="skill-box">
-                <div class="skill-progress">
-                    <div class="fourty-percent mb-red">
-                        <div class="skill-name">
-                            <span>Java</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-progress">
-                    <div class="fifty-percent mb-green">
-                        <div class="skill-name"><span>CSS</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-progress">
-                    <div class="sixty-percent mb-pink">
-                        <div class="skill-name"><span>JavaScript</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-progress">
-                    <div class="sixty-five-percent mb-brown">
-                        <div class="skill-name"><span>Android</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-box">
+                </div>);
+                })
+            }
+            <div class="skill-box dark:text-white bg-slate-400 ">
                 <div class="qualification">
                     <h2>Qualifications</h2>
                     <ul>

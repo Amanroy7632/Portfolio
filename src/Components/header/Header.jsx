@@ -1,11 +1,19 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from 'react';
-import "./CssFile/header.css";
+import "./../CssFile/header.css";
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
+
+import data from "../../navbarData";
+
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faUserTie } from "@fortawesome/free-solid-svg-icons";
-import profileimage from "./images/profile_1.png"
-function Header({ navDatas, getId }) {
+
+import profileimage from "./../images/profile_1.png"
+import ThemeButton from "../themeSwitch/ThemeButton";
+function Header() {
+//   const getId=90;
+  // const [navDatas]=useState(data);
+  const navDatas=data;
   const [isDarkMode, setDarkMode] = useState(false);
   const [active, setActive] = useState(false);
   const menubarHandler = () => {
@@ -15,7 +23,6 @@ function Header({ navDatas, getId }) {
       menuBar.classList.remove("active-menuBar");
     } else {
       menuBar.classList.add("active-menuBar");
-
     }
     setActive(!active);
   }
@@ -83,10 +90,7 @@ function Header({ navDatas, getId }) {
         <nav className=' flex justify-between w-4/5 items-center h-16 '>
           <div className=" flex w-1/6 max-md:w-1/3 justify-between gap-4 items-center">
             <div className=" w-2/3">
-            <DarkModeSwitch className=" "
-              checked={isDarkMode}
-              onChange={toggleDarkMode}
-            />
+            <ThemeButton/>
             </div>
             <Link to={"/"} className='flex  items-center'>
               <img src={profileimage} alt="" className=" w-1/3 max-md:w-[50%] rounded-[50%]" />
@@ -102,7 +106,7 @@ function Header({ navDatas, getId }) {
                 } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 `
               } to={navData.href} hrefLang="#services" onClick={() => {
 
-                getId(navData.id);
+                // getId(navData.id);
               }} >{navData.name}</NavLink></li>;
             })}
           </ul>
@@ -133,7 +137,7 @@ function Header({ navDatas, getId }) {
               : "text-gray-700 dark:text-white "
             } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 `
           } to={navData.href} hrefLang="#services" onClick={() => {
-            getId(navData.id);
+            // getId(navData.id);
           }} >{navData.name}</NavLink></li>;
         })}
         {/* <li><NavLink 

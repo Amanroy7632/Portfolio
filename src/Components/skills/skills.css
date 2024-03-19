@@ -1,15 +1,6 @@
-.skill-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin: 5rem;
-
-}
 .skill-container .skill-box{
     flex: 1 1 25rem;
-    background: var(--second-bg-color);
+    /* background: var(--second-bg-color); */
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -21,81 +12,13 @@
     border: .2rem solid var(--main-color);
     transform: scale(1.02);
 }
-.skill-progress{
-    width: 20rem;
-    height: 6.4rem;
-    background-color: lightgray;
-    border: 1px solid rgb(39, 38, 38);
-    border-radius:20px;
-    /* margin:auto; */
-}
-.skill-name span{
-    color: white;
-    font-size: 4rem;
-    align-items: center;
-    padding-left: 2rem;
 
-}
-.eighty-five-percent{
-    width: 85%;
-    height: inherit;
-
-}
 .skill-progress>div{border-radius: 20px 0px 0px 20px;}
 .mb-blue{
     /* border-radius: 20px 0px 0px 20px; */
     background-color: blue;
 }
-.seventy-five-percent{
-    width: 75%;
-    height: inherit;
-}
-.mb-orange{
-    background-color: orange;
-}
-.seventy-percent{
-    width: 70%;
-    height: inherit;
-}
-.mb-lorange{
-    background-color: rgb(92, 237, 56);
-}
-.ninty-percent{
-    width: 90%;
-    height: inherit;
-}
-.mb-dark{
-    background-color: blueviolet;
-}
-.fourty-percent{
-    width: 40%;
-    height: inherit;
-}
-.mb-red{
-    background-color: red;
-}
-.fifty-percent{
-    width: 50%;
-    height: inherit;
-}
-.mb-green{
-    background-color: green;
-}
-.sixty-percent{
-    width: 60%;
-    height: inherit;
-}
-.mb-pink{
-    background-color: pink;
-}
-.sixty-five-percent{
-    width: 65%;
-    height: inherit;
 
-}
-.mb-brown{
-    background-color: cornflowerblue;
-}
 .qualification h2{
     color: var(--main-color);
     font-size: 2.3rem;

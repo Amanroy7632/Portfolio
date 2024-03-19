@@ -2,13 +2,13 @@
     /* margin: 10%; */
     /* border: 2px solid yellow; */
     /* margin-top: 6rem; */
-    padding-top: 10vh;
+    margin-top: 10vh;
     display: flex;
     /* flex-wrap: wrap; */
     /* flex-wrap: nowrap; */
     /* flex-direction: row; */
     width: 100vw;
-    height: 100vh;
+    /* height: 0vh; */
     justify-content: space-evenly;
     align-items: center;
     /* justify-content: center; */

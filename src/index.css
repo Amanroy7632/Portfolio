@@ -22,22 +22,18 @@
 } 
 html{
     font-size: 62.5%;
-    /* overflow: hidden; */
     overflow-x: hidden;
 }
 body{
     color: #000;
-    /* color: var(--text-color); */
 }
 body.dark{
-    /* background-color: #fff; */
     background: var(--bg-color);
-    /* color: #000; */
     color: #fff;
 }
 
 section{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 10rem 9% 2rem;
 
 }

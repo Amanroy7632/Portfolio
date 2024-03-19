@@ -43,7 +43,7 @@ function Github() {
     //     {data.avtar_url} */}
       
     // </div>
-    <div className='h-screen mt-28 flex dark:text-yellow-50 justify-center  dark:bg-black dark:border-gray-700'>
+    <div className='h-screen mt-[10vh] flex dark:text-yellow-50 justify-center  dark:bg-black dark:border-gray-700'>
     {data ? (
 
       <div className='p-8'>
