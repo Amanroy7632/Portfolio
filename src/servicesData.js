@@ -7,7 +7,7 @@ const servicesData=[
         iconName:faGlobe,
         headName:"Web Developer",
         detail:"This role involves a combination of creative design skills and technical programming skills to create functional and visually appealing online experiences. Here are key aspects of a web developer's role:",
-        btnData:"Front-End :- HTML,CSS,JavaScript",
+        btnData:"Front-End :- HTML,CSS,Tailwind,JavaScript",
     },
     {   
         id:2,

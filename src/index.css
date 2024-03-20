@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    border: none;
+    /* border: none; */
     outline: none;
     scroll-behavior: smooth;
     font-family:'Poppins',sans-serif;
@@ -30,12 +30,6 @@ body{
 body.dark{
     background: var(--bg-color);
     color: #fff;
-}
-
-section{
-    /* min-height: 100vh; */
-    padding: 10rem 9% 2rem;
-
 }
 
 .menubar{

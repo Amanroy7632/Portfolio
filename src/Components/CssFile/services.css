@@ -1,5 +1,5 @@
 .services{
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
 }
 .services h2{
     margin-bottom: 5rem;
@@ -22,7 +22,7 @@
     border-radius: 10rem 0rem;
     text-align: center;
     transition: 0.5s ease;
-    /* border: 0.2rem solid #181a1b;  */
+    border: 0.2rem solid #232627; 
 }
 .services-container .services-box:nth-child(2){
     border-radius: 0rem 10rem;

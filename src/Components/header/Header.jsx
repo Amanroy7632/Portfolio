@@ -101,7 +101,7 @@ function Header() {
             {navDatas.map((navData) => {
               return <li key={navData.id} ><NavLink className={({ isActive }) =>
                 `block py-2 pr-4 pl-3 duration-200 text-2xl ${isActive
-                  ? " text-cyan-400"
+                  ? " text-cyan-400 border-[#0ef]"
                   : "text-gray-700 dark:text-white "
                 } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 `
               } to={navData.href} hrefLang="#services" onClick={() => {
@@ -133,7 +133,7 @@ function Header() {
         {navDatas.map((navData) => {
           return <li onClick={hideNavigationHandler} ><NavLink className={({ isActive }) =>
             `block py-2 pr-4 pl-3 duration-200 ${isActive
-              ? " text-cyan-400"
+              ? " text-cyan-400 border-[#0ef]"
               : "text-gray-700 dark:text-white "
             } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 `
           } to={navData.href} hrefLang="#services" onClick={() => {

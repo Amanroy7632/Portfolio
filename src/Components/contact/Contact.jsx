@@ -55,14 +55,14 @@ function Contact() {
 
     }
   return (
-    <section className=" dark:bg-black dark:text-white">
+    <section className=" dark:bg-black dark:text-white mt-[10vh] ">
     <div className= " max-md:h-[20vh] flex justify-center dark:bg-black text-white w-full bg-opacity-60" style={{backgroundImage:`url(https://media.istockphoto.com/id/1213738982/photo/male-college-professor-gestures-during-lecture.jpg?s=612x612&w=0&k=20&c=vPvCqzyq3VUzjCaU-PoMaxC1ncK386Q78Cdp7bUj2Mw=)`,backgroundSize:"cover",backgroundPosition:"center",backgroundClip:"content-box",backgroundRepeat:"no-repeat" }}>
       <div className=" flex w-4/5 items-center h-[50vh] max-md:h-[100%]  dark:text-white">
         <h1 className=" text-5xl px-10 " style={{fontWeight:"bolder"}} >Get In Touch</h1>
         <p></p>
       </div>
     </div>
-    <div className="form lg:w-4/5 lg:h-[75vh] flex m-auto md:w-full dark:bg-black dark:text-white">
+    <div className="form lg:w-4/5 sm:w-full lg:h-[75vh] flex m-auto md:w-full dark:bg-black dark:text-white">
       <div className="form max-md:w-[100%] lg:w-[60%] md:w-full  h-full bg-slate-300">
         <div className="form-values px-10 py-12 dark:bg-[#181a1b] dark:text-white">
           <div className="flex justify-center items-center">
@@ -84,7 +84,7 @@ function Contact() {
                     <input
                       type={field.input.type}
                       placeholder={field.input.placeholder}
-                      className="flex border rounded-md py-3 px-5 dark:text-white dark:bg-transparent outline-none"
+                      className="flex border  rounded-md py-3 px-5 dark:text-white dark:bg-transparent outline-none"
                     />
                   </div>
                 );

@@ -4,6 +4,7 @@ import ecom from './../images/ecom.png'
 import weatherImg from './../images/weather.png'
 import journalistImg from './../images/journalist.png'
 import expenseimg from './../images/expense.png'
+import healthImg from './../images/healthcoach.png'
 import './project.css'
 function Project() {
     const projects = [
@@ -34,14 +35,21 @@ function Project() {
             description: "A user friendly web based expense tracker application which provides the ability to manage expense tracking for customers.",
             image: expenseimg
             ,link:"https://amanroy7632.github.io/CodeAlpha-Intern-project/ExpenseTrackerApp/"
+          },
+          {
+            id:5,
+            title:"Health Coach App",
+            description:"An Application where a health coach guides you to eat healthy foods and stay fit and wealthy in your life.",
+            image:healthImg,
+            link:"https://health-coach-qlx3i271f-amanroy7632s-projects.vercel.app/"
           }
       ];
   return (
     <div className="projects-container">
-    <h1 className='heading'><span className='span-color'>My </span>Projects</h1>
+    <h1 className='heading mb-10 font-semibold'><span className='span-color'>My </span>Projects</h1>
     <div className="projects">
       {projects.map(project => (
-        <div className="project" key={project.id}>
+        <div className="project dark:bg-[#323946]" key={project.id}>
           {/* <img src={require(`${project.image}`).default}  alt={project.title} /> */}
        <Link to={project.link}> <img src={project.image}  alt={project.title} /> </Link>  
           <div className="project-info">

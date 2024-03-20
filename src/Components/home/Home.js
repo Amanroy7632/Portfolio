@@ -13,7 +13,7 @@ import { useState } from "react";
 export default function Home() {
   const [iconDatas]=useState(iconData)
   return (
-      <section className="home">
+      <div className="home lg:mt-[10vh]">
       {/* <div class="home-content"> */}
            <HImage/>
            {/* <HContent iconDatas={iconDatas}/> */}
@@ -69,7 +69,7 @@ export default function Home() {
       {/* <FontAwesomeIcon icon={faDownload} /> */}
     </div>
         {/* </div> */}
-      </section>
+      </div>
         
       
     

@@ -10,12 +10,12 @@ function About() {
         document.querySelector(".readMore").classList.toggle("change-color");
         setReadmore(!readMore);
     }
-    return (<div id="about" className='about'>
+    return (<div id="about" className='about max-md:mt-[5vh] flex justify-evenly items-center flex-nowrap w-[100vw] h-[90vh] gap-[2rem]'>
         <div className="about-img">
             <img src={profilePic} alt="profile pic" />
         </div>
         <div className="about-content">
-            <h2 className="heading">About <span className='span-color'>Me</span></h2>
+            <h2 className="heading font-semibold">About <span className='span-color'>Me</span></h2>
             <h3>Hello! Welcome to my <span>Portfolio</span>! Really happy to see you here.</h3>
             <p> {description}<span className='readMore' onClick={readMoreHandler}>{readMore?`show less`:`read more`}</span></p>
 
