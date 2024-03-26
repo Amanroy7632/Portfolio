@@ -13,7 +13,7 @@ function Project() {
           title: "E-Commerce",
           description: "Latest Project",
           image: ecom
-          ,link:"https://e-commerce-caip-dm562z76a-amanroy7632s-projects.vercel.app"
+          ,link:"https://e-commerce-caip-iy1eb02xy-amanroy7632s-projects.vercel.app/"
         },
         {
           id: 2,
