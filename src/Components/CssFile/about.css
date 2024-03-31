@@ -9,7 +9,8 @@
     color: red;
 }
 .about-img img {
-    width: 28vw;
+    /* width: 28vw; */
+    /* width: 40%; */
     border-radius: 60%;
     aspect-ratio: 2/3;
     object-fit: cover;
@@ -88,7 +89,7 @@
         border-radius: 50%;
     }
     .about-img img{
-        width: 50vw;
+        /* width: 50vw; */
         aspect-ratio: 1/1;
         /* object-fit: cover; */
         object-position: 15px 0px;
