@@ -1,5 +1,4 @@
-import HImage from "../HImage";
-import HContent from "../HContent"
+import HImage from "./HImage";
 import iconData from "../../iconData";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 

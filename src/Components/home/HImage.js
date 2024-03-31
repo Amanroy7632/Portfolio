@@ -1,7 +1,6 @@
-import profilePic from '../Components/images/profile_1.png';
-import './CssFile/home.css'
+import profilePic from "./../images/profile_1.png";
+import "./../CssFile/home.css"
 function HImage() {
-    
     return (
               
         <div className="home-img">
