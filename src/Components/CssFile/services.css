@@ -13,16 +13,14 @@
     flex-wrap: wrap;
     gap: 2rem;
 }
-.services-box.add-border{
-    /* border: 0.2rem solid #000;  */
-}
+
 .services-container .services-box{
     flex: 1 1 30rem;
     padding: 3rem 2rem 4rem;
     border-radius: 10rem 0rem;
     text-align: center;
     transition: 0.5s ease;
-    border: 0.2rem solid #232627; 
+    /* border: 0.2rem solid #232627;  */
 }
 .services-container .services-box:nth-child(2){
     border-radius: 0rem 10rem;

@@ -38,8 +38,9 @@ function Skills() {
         <div className="skill-container flex justify-center items-center flex-wrap gap-[2rem] m-[5rem]">
             {
                 skillData.map((data)=>{
-                    return (<div key={data.id} className="skill-box bg-[#323946] flex justify-center items-center">
-                    <div className= {`skill-progress w-[20rem] h-[6.4rem] bg-gray-400 border border-[rgb(39, 38, 38)] rounded-[20px] `}>
+                    return (
+                <div key={data.id} className="skill-box dark:bg-[#323946] flex justify-center items-center">
+                    <div className= {`skill-progress w-[20rem] h-[6.4rem] bg-slate-300 dark:bg-gray-400 border dark:border-[rgba(255,255,255,0.10)] rounded-[20px] `}>
                         <div className={`flex justify-center h-full ${data.amount>=50?"bg-blue-500":data.amount>=40?"bg-red-400":"bg-indigo-500"}`} style={{width:`${data.amount}%`}}>
                             <div className="skill-name flex items-center justify-center">
                                 <span className=' text-white text-4xl items-center' >{data.skillName}</span>
