@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import ecom from './../images/ecom.png'
-import weatherImg from './../images/weather.png'
-import journalistImg from './../images/journalist.png'
-import expenseimg from './../images/expense.png'
-import healthImg from './../images/healthcoach.png'
 import studentImg from "./../images/student.png"
+import {connect,ecom,weatherImg ,journalistImg,healthImg,expenseimg} from "./../images/index.js"
 import './project.css'
 function Project() {
   const projects = [
@@ -24,6 +20,15 @@ function Project() {
       description: "Description of Project 2",
       image: weatherImg
       ,link:"https://my-wather-app-ten.vercel.app/",
+      techUsed:"React js Tailwind CSS",
+      isNew:true
+    },
+    {
+      id: 22,
+      title: "Connect - 4 Dots",
+      description: "A 4 x 4 dot connecting game of two player .",
+      image: connect
+      ,link:"https://connect-4-dots.vercel.app/",
       techUsed:"React js Tailwind CSS",
       isNew:true
     },
