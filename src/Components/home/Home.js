@@ -60,7 +60,7 @@ export default function Home() {
         <span className="glowing-txt">Get</span>{" "}
       </a> */}
       
-      <a href="https://raw.githubusercontent.com/Amanroy7632/Amanroy7632/7a2808f995971196572d4cb5e59c1d8c1d45a517/Aman_cse_web.pdf" className="glowing-btn btn">
+      <a href="https://raw.githubusercontent.com/Amanroy7632/Amanroy7632/b076c1ccf5ca8895ba44c2c57ebcfbd5f0e32419/AmanKrYadav-1.pdf" className="glowing-btn btn">
         <span className="glowing-txt">
           G<span className="faulty-letter">e</span>t CV<FontAwesomeIcon icon={faDownload} />&nbsp;
         </span>
