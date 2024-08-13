@@ -1,17 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import studentImg from "./../images/student.png"
-import {connect,ecom,weatherImg ,journalistImg,healthImg,expenseimg} from "./../images/index.js"
+import {connect,ecom,bus,weatherImg ,journalistImg,healthImg,expenseimg} from "./../images/index.js"
 import './project.css'
 function Project() {
   const projects = [
     {
       id: 1,
       title: "E-Commerce",
-      description: "Latest Project",
+      description: "A full stack web application for ecommerce similar to myntra.",
       image: ecom
-      ,link:"https://e-commerce-caip-iy1eb02xy-amanroy7632s-projects.vercel.app/",
+      ,link:"https://e-commerce-caip.vercel.app/",
       techUsed:"JavaScript React js , Tailwind CSS",
+      isNew:true
+    },
+    {
+      id: 11,
+      title: "Book My-Adventure",
+      description: "A full stack web application for booking the tickets of buses online similar to make-my-trip.",
+      image: bus
+      ,link:"https://book-my-adventure.vercel.app/",
+      techUsed:"JavaScript React js , Tailwind CSS,Node js, Express js and MongoDb",
       isNew:true
     },
     {
