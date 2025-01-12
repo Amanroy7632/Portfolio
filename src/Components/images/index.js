@@ -6,4 +6,5 @@ import healthImg from './healthcoach.png'
 // import studentImg from "./images/student.png"
 import connect from './connect.png'
 import bus from "./bus.png"
-export  {ecom,weatherImg,bus,journalistImg,expenseimg,healthImg,connect}
+import crmjio from "./crmjio.png";
+export  {ecom,weatherImg,bus,journalistImg,expenseimg,healthImg,connect,crmjio}

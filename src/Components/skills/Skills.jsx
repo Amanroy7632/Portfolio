@@ -18,7 +18,7 @@ function Skills() {
   return (
     <div className="skill mt-[10vh] max-md:mt-[11vh]" id="skill">
       <h1 className="heading font-semibold ">
-        <span>SKILLS</span>
+        <span>SKILLS & Experience</span>
       </h1>
       <div className="skill-container flex justify-center items-center flex-wrap gap-[2rem] m-[5rem]">
         {skillData.map((data) => {
@@ -52,8 +52,10 @@ function Skills() {
         })}
         <div className="skill-box dark:text-white bg-slate-400 ">
           <div className="qualification">
-            <h2>Qualifications</h2>
+            <h2>Experience</h2>
             <ul>
+              <li>Backend Developer @Ur Heaven Space Pvt. Ltd.</li>
+              <li>Qualifications</li>
               <li>
                 12 <sup>th</sup> with 75% marks.
               </li>
